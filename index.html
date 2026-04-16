@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+
     <!-- CSS LINK -->
     <link rel="stylesheet" href="./css/styles.css" />
 
     <!-- JS LINK -->
     <script type="module" defer src="./javascript/app.js"></script>
-    <title>Sajt Za Svakog Gamera 🕹️</title>
+    <title>Ultimate Gamer Dashboard 🕹️</title>
   </head>
   <body>
-    <header>
+    <header id="home">
+      <!-- HEADER -->
       <div class="flex">
         <div class="logo">
           <a href="#"
@@ -20,25 +24,31 @@
               alt="Game Warrior Logo"
           /></a>
         </div>
+
+        <!-- NAV -->
         <nav>
           <button id="nav-toggle" class="hamburger-menu">
             <span class="strip"></span>
             <span class="strip"></span>
             <span class="strip"></span>
           </button>
+
           <ul id="nav-menu-container">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Forums</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recent-games">Games</a></li>
+            <li><a href="#tournaments">Blog</a></li>
+            <li><a href="#recent-reviews">Forums</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+
         <a href="#" id="login-register-button">Login / Register</a>
       </div>
     </header>
 
+    <!-- MAIN -->
     <main>
+      <!-- HERO -->
       <section id="hero-image">
         <div class="hero-marketing-text">
           <h1>The Best <span>Games</span> Out There</h1>
@@ -51,6 +61,7 @@
         </div>
       </section>
 
+      <!-- LATEST NEWS -->
       <section id="latest-news">
         <div class="flex">
           <h5>Latest News</h5>
@@ -66,8 +77,10 @@
         </div>
       </section>
 
+      <!-- GAME TYPES -->
       <section id="game-types-boxes">
         <div class="flex">
+          <!-- box 1 -->
           <div class="box new">
             <div class="shade"></div>
             <span class="badge new">New</span>
@@ -78,6 +91,7 @@
             </div>
           </div>
 
+          <!-- box 2 -->
           <div class="box strategy">
             <div class="shade"></div>
             <span class="badge strategy">New</span>
@@ -88,6 +102,7 @@
             </div>
           </div>
 
+          <!-- box 3 -->
           <div class="box rpg">
             <div class="shade"></div>
             <span class="badge rpg">New</span>
@@ -98,6 +113,7 @@
             </div>
           </div>
 
+          <!-- box 4 -->
           <div class="box racing">
             <div class="shade"></div>
             <span class="badge racing">New</span>
@@ -110,9 +126,11 @@
         </div>
       </section>
 
+      <!-- RECENT GAMES -->
       <section id="recent-games">
         <h1>Recent Games</h1>
         <div class="flex">
+          <!-- game 1 -->
           <div class="box">
             <span class="badge new">New</span>
             <img src="./assets/games/recent_games_1.jpg" />
@@ -126,6 +144,7 @@
             </div>
           </div>
 
+          <!-- game 2 -->
           <div class="box">
             <span class="badge racing">Racing</span>
             <img src="./assets/games/recent_games_2.jpg" />
@@ -139,6 +158,7 @@
             </div>
           </div>
 
+          <!-- game 3 -->
           <div class="box">
             <span class="badge adventure">Adventure</span>
             <img src="./assets/games/recent_games_3.jpg" />
@@ -154,14 +174,18 @@
         </div>
       </section>
 
+      <!-- TOURNAMENTS -->
       <section id="tournaments">
         <div class="flex">
           <span class="badge tournaments">Tournaments</span>
+
+          <!-- tournament 1 -->
           <div class="box">
             <span class="badge premium-tournament">Premium Tournament</span>
             <div class="tournaments-image">
               <img src="./assets/games/tournaments_1.jpg" />
             </div>
+
             <div class="tournaments-content">
               <h3>Starcraft 2</h3>
               <div>
@@ -183,11 +207,13 @@
             </div>
           </div>
 
+          <!-- tournament 2 -->
           <div class="box">
             <span class="badge premium-tournament">Premium Tournament</span>
             <div class="tournaments-image">
               <img src="./assets/games/tournaments_2.jpg" />
             </div>
+
             <div class="tournaments-content">
               <h3>World Of Warcraft</h3>
               <div>
@@ -211,9 +237,11 @@
         </div>
       </section>
 
+      <!-- RECENT REVIEWS -->
       <section id="recent-reviews">
         <h1>Recent Reviews</h1>
         <div class="flex">
+          <!-- review 1 -->
           <div class="box">
             <span class="rating-badge gold">9.3</span>
             <div class="recent-reviews-image">
@@ -228,6 +256,7 @@
             </div>
           </div>
 
+          <!-- review 2 -->
           <div class="box">
             <span class="rating-badge purple">9.5</span>
             <div class="recent-reviews-image">
@@ -242,6 +271,7 @@
             </div>
           </div>
 
+          <!-- review 3 -->
           <div class="box">
             <span class="rating-badge green">9.1</span>
             <div class="recent-reviews-image">
@@ -256,6 +286,7 @@
             </div>
           </div>
 
+          <!-- review 4 -->
           <div class="box">
             <span class="rating-badge violet">9.7</span>
             <div class="recent-reviews-image">
@@ -273,6 +304,7 @@
         </div>
       </section>
 
+      <!-- POSTS -->
       <section id="posts-comments">
         <div class="flex">
           <div class="game-warrior">
@@ -287,8 +319,11 @@
             />
           </div>
 
+          <!-- left posts -->
           <div class="posts-comments-box">
             <h3>Latest Posts</h3>
+
+            <!-- post 1 -->
             <div class="post-item">
               <img src="./assets/ui/latest_posts_1.jpg" />
               <div>
@@ -298,6 +333,7 @@
               </div>
             </div>
 
+            <!-- post 2 -->
             <div class="post-item">
               <img src="./assets/ui/latest_posts_2.jpg" />
               <div>
@@ -307,6 +343,7 @@
               </div>
             </div>
 
+            <!-- post 3 -->
             <div class="post-item">
               <img src="./assets/ui/latest_posts_3.jpg" />
               <div>
@@ -317,8 +354,11 @@
             </div>
           </div>
 
+          <!-- right posts -->
           <div class="posts-comments-box">
             <h3>Top Comments</h3>
+
+            <!-- post 1 -->
             <div class="comments-item">
               <img src="./assets/ui/top_comments_1.jpg" />
               <div>
@@ -330,6 +370,7 @@
               </div>
             </div>
 
+            <!-- post 2 -->
             <div class="comments-item">
               <img src="./assets/ui/top_comments_2.jpg" />
               <div>
@@ -341,6 +382,7 @@
               </div>
             </div>
 
+            <!-- post 3 -->
             <div class="comments-item">
               <img src="./assets/ui/top_comments_3.jpg" />
               <div>
@@ -366,34 +408,36 @@
         </div>
       </section>
     </main>
+    <!-- END OF MAIN -->
 
-    <footer>
+    <!-- FOOTER -->
+    <footer id="contact">
       <div class="flex">
         <small
           >Copyright &copy; 2023 All rights reserved | This template is made
           with <span class="footer-heart">&#9829;</span> by
-          <a href="https://colorlib.com" target="_blank">Bijelic Nikola</a
+          <a href="https://github.com/hofman10/" target="_blank">Bijeli&#263 Nikola</a
           >.</small
         >
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
 
           <li>
-            <a href="#">Games</a>
+            <a href="#recent-games">Games</a>
           </li>
 
           <li>
-            <a href="#">Blog</a>
+            <a href="#tournaments">Blog</a>
           </li>
 
           <li>
-            <a href="#">Forums</a>
+            <a href="#recent-reviews">Forums</a>
           </li>
 
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

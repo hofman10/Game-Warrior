@@ -3,8 +3,16 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  ::selection {
+    background: #ffb320;
+    color: #252525;
+  }
+}
+
 /* ==========
-glonalni stilovi
+GLOBAL STYLES
 ============= */
 
 h1,
@@ -20,15 +28,19 @@ h5 {
 h1 {
   font-size: 2.5em;
 }
+
 h2 {
   font-size: 2em;
 }
+
 h3 {
   font-size: 1.6em;
 }
+
 h4 {
   font-size: 1.4em;
 }
+
 h5 {
   font-size: 1.2em;
 }
@@ -66,9 +78,11 @@ strong {
 .badge.new {
   background-color: #ff205f;
 }
+
 .badge.strategy {
   background-color: #4eae60;
 }
+
 .badge.racing {
   background-color: #694eae;
 }
@@ -162,13 +176,7 @@ nav ul li a:hover {
   padding: 10px 15px;
   font-size: 0.85em;
   font-weight: 600;
-  /* display: grid;
-  place-content: center; */
 }
-
-/* -----------------------
- KRAJ HEADER
---------------------------*/
 
 /* -----------------------
 HERO
@@ -177,6 +185,7 @@ HERO
   background: url(../assets/backgrounds/purple_monkey_bg.jpg);
   height: 820px;
 }
+
 .hero-marketing-text {
   max-width: 1200px;
   margin: -30px auto 0;
@@ -217,12 +226,9 @@ HERO
   cursor: pointer;
   font-weight: 600;
 }
-/* -----------------------
-KRAJ HERO
---------------------------*/
 
 /* -----------------------
-POCETAK LATEST NEWS SECTION
+LATEST NEWS SECTION
 --------------------------*/
 
 #latest-news {
@@ -261,11 +267,7 @@ POCETAK LATEST NEWS SECTION
 }
 
 /* -----------------------
-KRAJ LATEST NEWS SECTION
---------------------------*/
-
-/* -----------------------
-POCETAK GAME TYPES STYLES
+GAME TYPES STYLES SECTION
 --------------------------*/
 #game-types-boxes {
   margin-bottom: 75px;
@@ -281,14 +283,17 @@ POCETAK GAME TYPES STYLES
   background: url(../assets/backgrounds/wow_lady.jpg) top center no-repeat;
   background-size: cover;
 }
+
 #game-types-boxes .box.strategy {
   background: url(../assets/backgrounds/robotic_ninja.jpg) top center no-repeat;
   background-size: cover;
 }
+
 #game-types-boxes .box.rpg {
   background: url(../assets/backgrounds/latest_posts_2.jpg) top center no-repeat;
   background-size: cover;
 }
+
 #game-types-boxes .box.racing {
   background: url(../assets/backgrounds/sports_car.jpg) top center no-repeat;
   background-size: cover;
@@ -317,11 +322,7 @@ POCETAK GAME TYPES STYLES
 }
 
 /* -----------------------
-KRAJ GAME TYPES STYLES
---------------------------*/
-
-/* -----------------------
-POCETAK RECENT GAMES
+RECENT GAMES SECTION
 --------------------------*/
 #recent-games {
   background: url(../assets/backgrounds/recent_games_bg.png) top center
@@ -366,14 +367,10 @@ POCETAK RECENT GAMES
 #recent-games .box-lower-section a {
   font-size: 0.8em;
 }
-/* -----------------------
-KRAJ RECENT GAMES
---------------------------*/
 
 /* -----------------------
-POCETAK TOURNAMENTS
+TOURNAMENTS SECTION
 --------------------------*/
-
 #tournaments {
   background: url(../assets/backgrounds/footer_bg_pattern.png) 0 0 repeat;
   padding: 125px 0 105px;
@@ -439,11 +436,7 @@ POCETAK TOURNAMENTS
 }
 
 /* -----------------------
-KRAJ TOURNAMENTS
---------------------------*/
-
-/* -----------------------
-POCETAK RECENT REVIEWS
+RECENT REVIEWS SECTION
 --------------------------*/
 #recent-reviews {
   background: url("../assets/backgrounds/recent_reviews_bg.png") top right
@@ -501,11 +494,7 @@ POCETAK RECENT REVIEWS
 }
 
 /* -----------------------
-KRAJ RECENT REVIEWS
---------------------------*/
-
-/* -----------------------
-POCETAK POST/COMMENTS
+POST/COMMENTS SECTION
 --------------------------*/
 #posts-comments {
   background: url("../assets/backgrounds/footer_bg_pattern.png") 0 0 repeat;
@@ -631,12 +620,9 @@ POCETAK POST/COMMENTS
   font-size: 0.8em;
   margin-top: 0;
 }
-/* -----------------------
-KRAJ POST/COMMENTS
---------------------------*/
 
 /* -----------------------
-POCETAK FOOTER
+FOOTER
 --------------------------*/
 footer {
   background-color: #252525;
@@ -669,12 +655,14 @@ footer ul li {
 footer ul li a {
   color: #ddd;
   font-size: 0.8em;
+  transition: all 0.3s ease-in-out;
 }
-/* -----------------------
-KRAJ FOOTER
---------------------------*/
 
-/* start: media queries */
+footer ul li a:hover {
+  color: #ffb320;
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 1200px) {
   .flex {
     max-width: 1000px;
@@ -694,7 +682,7 @@ KRAJ FOOTER
   }
 }
 
-/* POCETAK 991PX */
+/* START 991PX */
 @media (max-width: 991px) {
   .flex {
     max-width: 720px;
@@ -782,9 +770,8 @@ KRAJ FOOTER
     padding: 0;
   }
 }
-/* KRAJ 991px */
 
-/* POCETAK 767PX */
+/* START 767PX */
 @media (max-width: 767px) {
   h4 {
     font-size: 1.2em;
@@ -889,8 +876,7 @@ KRAJ FOOTER
   }
 }
 
-/* KRAJ 767px */
-
+/* START 400px */
 @media (max-width: 400px) {
   .logo img {
     width: 150px;
@@ -906,4 +892,3 @@ KRAJ FOOTER
     height: 220px;
   }
 }
-/* KRAJ MEDIA QUERIES */
