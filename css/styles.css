@@ -182,7 +182,8 @@ nav ul li a:hover {
 HERO
 --------------------------*/
 #hero-image {
-  background: url(../assets/backgrounds/purple_monkey_bg.jpg);
+  background: url(../assets/backgrounds/purple_monkey_bg.jpg) center/cover
+    no-repeat;
   height: 820px;
 }
 
@@ -663,6 +664,13 @@ footer ul li a:hover {
 }
 
 /* MEDIA QUERIES */
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.4;
+  }
+}
+
+/* START 1200PX */
 @media (max-width: 1200px) {
   .flex {
     max-width: 1000px;
