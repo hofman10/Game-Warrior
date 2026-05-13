@@ -2,16 +2,9 @@
 
 A modern, responsive gaming community website showcasing game reviews, tournaments, and latest gaming news. Built with vanilla HTML, CSS, and JavaScript as a frontend development practice project.
 
-## 📋 Table of Contents
+## 🌐 Live Demo
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Responsive Design](#responsive-design)
-- [Screenshots](#screenshots)
-- [What I Learned](#what-i-learned)
-- [Future Enhancements](#future-enhancements)
+**[View Live Demo](https://game-warrior-hub.netlify.app/)**
 
 ## ✨ Features
 
