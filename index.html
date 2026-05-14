@@ -6,6 +6,14 @@
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
 
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- CSS LINK -->
     <link rel="stylesheet" href="./css/styles.css" />
 
@@ -50,27 +58,31 @@
     <main>
       <!-- HERO -->
       <section id="hero-image">
+        <div class="hero-overlay"></div>
         <div class="hero-marketing-text">
-          <h1>The Best <span>Games</span> Out There</h1>
+          <h1>
+            Discover the <span class="gradient-text">Ultimate</span> Gaming
+            Experience
+          </h1>
           <h5>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.
-            Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
+            Join thousands of gamers in the most immersive gaming community. Get
+            exclusive reviews, compete in tournaments, and stay ahead with the
+            latest gaming news.
           </h5>
-          <button>Read More</button>
+          <button class="hero-cta">Explore Games</button>
         </div>
       </section>
 
       <!-- LATEST NEWS -->
       <section id="latest-news">
         <div class="flex">
-          <h5>Latest News</h5>
+          <h5>Breaking News</h5>
           <div id="latest-news-container">
             <div class="latest-news-item">
               <span class="badge new">New</span>
               <span class="latest-news-text"
-                >Lorem ipsum dolor sit amet, consectectur adipiscing elit
-                ipsum.</span
+                >Epic Games announces revolutionary new cross-platform
+                multiplayer system launching this summer</span
               >
             </div>
           </div>
@@ -85,42 +97,54 @@
             <div class="shade"></div>
             <span class="badge new">New</span>
             <div class="contents">
-              <h4>Suspendisse ut justo tem por, rutrum</h4>
-              <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
-              <a href="#" class="comments">3 Comments</a>
+              <h4>World of Warcraft: The War Within</h4>
+              <p>
+                Embark on an epic journey through Azeroth's darkest depths in
+                the latest expansion.
+              </p>
+              <a href="#" class="comments">248 Comments</a>
             </div>
           </div>
 
           <!-- box 2 -->
           <div class="box strategy">
             <div class="shade"></div>
-            <span class="badge strategy">New</span>
+            <span class="badge strategy">Strategy</span>
             <div class="contents">
-              <h4>Suspendisse ut justo tem por, rutrum</h4>
-              <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
-              <a href="#" class="comments">3 Comments</a>
+              <h4>StarCraft II: Tactical Mastery</h4>
+              <p>
+                Master real-time strategy with intense competitive gameplay and
+                epic campaigns.
+              </p>
+              <a href="#" class="comments">156 Comments</a>
             </div>
           </div>
 
           <!-- box 3 -->
           <div class="box rpg">
             <div class="shade"></div>
-            <span class="badge rpg">New</span>
+            <span class="badge rpg">RPG</span>
             <div class="contents">
-              <h4>Suspendisse ut justo tem por, rutrum</h4>
-              <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
-              <a href="#" class="comments">3 Comments</a>
+              <h4>Baldur's Gate 3: Epic Adventures</h4>
+              <p>
+                Experience the ultimate role-playing adventure with deep
+                storytelling and choices.
+              </p>
+              <a href="#" class="comments">421 Comments</a>
             </div>
           </div>
 
           <!-- box 4 -->
           <div class="box racing">
             <div class="shade"></div>
-            <span class="badge racing">New</span>
+            <span class="badge racing">Racing</span>
             <div class="contents">
-              <h4>Suspendisse ut justo tem por, rutrum</h4>
-              <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
-              <a href="#" class="comments">3 Comments</a>
+              <h4>Forza Motorsport: Speed Unleashed</h4>
+              <p>
+                Feel the adrenaline rush in the most realistic racing simulator
+                available.
+              </p>
+              <a href="#" class="comments">312 Comments</a>
             </div>
           </div>
         </div>
@@ -132,43 +156,55 @@
         <div class="flex">
           <!-- game 1 -->
           <div class="box">
-            <span class="badge new">New</span>
-            <img src="./assets/games/recent_games_1.jpg" />
-            <div class="box-lower-section">
-              <h4>Suspendisse ut justo tem por, rutrum</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectectur adipiscing elit lorem
-                ipsum dolor sit amet.
-              </p>
-              <a href="#" class="comments">3 Comments</a>
+            <div class="box-inner">
+              <span class="badge new">New</span>
+              <div class="image-wrapper">
+                <img src="./assets/games/recent_games_1.jpg" />
+              </div>
+              <div class="box-lower-section">
+                <h4>Cyberpunk 2077: Phantom Liberty</h4>
+                <p>
+                  The ultimate espionage thriller expansion brings new life to
+                  Night City with intense action and deep narrative choices.
+                </p>
+                <a href="#" class="comments">🗨️ 412 Comments</a>
+              </div>
             </div>
           </div>
 
           <!-- game 2 -->
           <div class="box">
-            <span class="badge racing">Racing</span>
-            <img src="./assets/games/recent_games_2.jpg" />
-            <div class="box-lower-section">
-              <h4>Susce pulvinar metus nulla, vel facilisis sem</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectectur adipiscing elit lorem
-                ipsum dolor sit amet.
-              </p>
-              <a href="#" class="comments">3 Comments</a>
+            <div class="box-inner">
+              <span class="badge racing">Racing</span>
+              <div class="image-wrapper">
+                <img src="./assets/games/recent_games_2.jpg" />
+              </div>
+              <div class="box-lower-section">
+                <h4>Gran Turismo 7: Racing Evolution</h4>
+                <p>
+                  Experience the most authentic racing simulation with stunning
+                  graphics, realistic physics, and hundreds of legendary cars.
+                </p>
+                <a href="#" class="comments">🗨️ 287 Comments</a>
+              </div>
             </div>
           </div>
 
           <!-- game 3 -->
           <div class="box">
-            <span class="badge adventure">Adventure</span>
-            <img src="./assets/games/recent_games_3.jpg" />
-            <div class="box-lower-section">
-              <h4>Suspendisse ut justo tem por, rutrum</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectectur adipiscing elit lorem
-                ipsum dolor sit amet.
-              </p>
-              <a href="#" class="comments">3 Comments</a>
+            <div class="box-inner">
+              <span class="badge adventure">Adventure</span>
+              <div class="image-wrapper">
+                <img src="./assets/games/recent_games_3.jpg" />
+              </div>
+              <div class="box-lower-section">
+                <h4>The Legend of Zelda: Tears of the Kingdom</h4>
+                <p>
+                  Embark on an epic adventure through Hyrule with revolutionary
+                  gameplay mechanics and breathtaking exploration.
+                </p>
+                <a href="#" class="comments">🗨️ 856 Comments</a>
+              </div>
             </div>
           </div>
         </div>
@@ -176,9 +212,8 @@
 
       <!-- TOURNAMENTS -->
       <section id="tournaments">
+        <h1>Esports Tournaments</h1>
         <div class="flex">
-          <span class="badge tournaments">Tournaments</span>
-
           <!-- tournament 1 -->
           <div class="box">
             <span class="badge premium-tournament">Premium Tournament</span>
@@ -187,22 +222,23 @@
             </div>
 
             <div class="tournaments-content">
-              <h3>Starcraft 2</h3>
-              <div>
-                <label>Tournament Begins:</label> <strong>June 20, 2019</strong>
+              <h3>StarCraft II: Global Championship</h3>
+              <div class="info-row">
+                <label>Tournament Begins:</label> <strong>July 15, 2026</strong>
               </div>
-              <div>
-                <label>Tournament Ends:</label> <strong>July 01, 2019</strong>
+              <div class="info-row">
+                <label>Tournament Ends:</label> <strong>August 30, 2026</strong>
               </div>
-              <div><label>Participants:</label> <strong>10 teams</strong></div>
-              <div>
-                <label>Tournament Organizer:</label> <strong>Admin</strong>
+              <div class="info-row">
+                <label>Participants:</label> <strong>32 teams</strong>
               </div>
-              <div>
-                <label class="prizes">Prizes:</label>
-                <label
-                  >1st place $2000, 2nd place: $1000, 3rd place: $500</label
-                >
+              <div class="info-row">
+                <label>Organizer:</label>
+                <strong>Blizzard Entertainment</strong>
+              </div>
+              <div class="prize-info">
+                <label class="prizes">Prize Pool:</label>
+                <strong>1st: $50,000 | 2nd: $25,000 | 3rd: $10,000</strong>
               </div>
             </div>
           </div>
@@ -215,22 +251,22 @@
             </div>
 
             <div class="tournaments-content">
-              <h3>World Of Warcraft</h3>
-              <div>
-                <label>Tournament Begins:</label> <strong>June 20, 2019</strong>
+              <h3>World of Warcraft: Arena Masters</h3>
+              <div class="info-row">
+                <label>Tournament Begins:</label> <strong>June 20, 2026</strong>
               </div>
-              <div>
-                <label>Tournament Ends:</label> <strong>July 01, 2019</strong>
+              <div class="info-row">
+                <label>Tournament Ends:</label> <strong>July 28, 2026</strong>
               </div>
-              <div><label>Participants:</label> <strong>10 teams</strong></div>
-              <div>
-                <label>Tournament Organizer:</label> <strong>Admin</strong>
+              <div class="info-row">
+                <label>Participants:</label> <strong>48 teams</strong>
               </div>
-              <div>
-                <label class="prizes">Prizes:</label>
-                <label
-                  >1st place $2000, 2nd place: $1000, 3rd place: $500</label
-                >
+              <div class="info-row">
+                <label>Organizer:</label> <strong>Blizzard Esports</strong>
+              </div>
+              <div class="prize-info">
+                <label class="prizes">Prize Pool:</label>
+                <strong>1st: $40,000 | 2nd: $20,000 | 3rd: $8,000</strong>
               </div>
             </div>
           </div>
@@ -247,11 +283,11 @@
             <div class="recent-reviews-image">
               <img src="./assets/games/recent_reviews_1.jpg" />
             </div>
-            <div>
-              <h4>Assasin's Creed</h4>
+            <div class="review-content">
+              <h4>Assassin's Creed Mirage</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor
-                sit amet.
+                A masterful return to stealth-focused gameplay with stunning
+                visuals and a captivating story set in 9th-century Baghdad.
               </p>
             </div>
           </div>
@@ -262,11 +298,11 @@
             <div class="recent-reviews-image">
               <img src="./assets/games/recent_reviews_2.jpg" />
             </div>
-            <div>
-              <h4>Doom</h4>
+            <div class="review-content">
+              <h4>Doom Eternal</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor
-                sit amet.
+                Relentless action and incredible combat mechanics make this one
+                of the best FPS experiences ever created.
               </p>
             </div>
           </div>
@@ -277,11 +313,11 @@
             <div class="recent-reviews-image">
               <img src="./assets/games/recent_reviews_3.jpg" />
             </div>
-            <div>
-              <h4>Overwatch</h4>
+            <div class="review-content">
+              <h4>Overwatch 2</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor
-                sit amet.
+                Fast-paced team-based shooter with excellent character design
+                and addictive competitive gameplay.
               </p>
             </div>
           </div>
@@ -293,11 +329,11 @@
               <img src="./assets/games/recent_reviews_4.jpg" />
             </div>
 
-            <div>
-              <h4>GTA</h4>
+            <div class="review-content">
+              <h4>GTA V Online</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor
-                sit amet.
+                The ultimate open-world experience with endless possibilities,
+                heists, and constant new content updates.
               </p>
             </div>
           </div>
@@ -310,8 +346,9 @@
           <div class="game-warrior">
             <img src="./assets/logo/footer_logo.png" />
             <p>
-              Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor
-              sit amet.
+              Your ultimate destination for gaming news, reviews, and
+              competitive esports. Join our thriving community of passionate
+              gamers worldwide.
             </p>
             <img
               class="footer-graphic"
@@ -327,9 +364,9 @@
             <div class="post-item">
               <img src="./assets/ui/latest_posts_1.jpg" />
               <div>
-                <h5>June 21, 2019</h5>
-                <p>Lorem ipsum dolor sit amet, consectectur adipiscing.</p>
-                <small>By: Admin</small>
+                <h5>May 10, 2026</h5>
+                <p>New Battle Royale Mode Dominates Gaming Charts</p>
+                <small>By: GameWarrior Team</small>
               </div>
             </div>
 
@@ -337,9 +374,9 @@
             <div class="post-item">
               <img src="./assets/ui/latest_posts_2.jpg" />
               <div>
-                <h5>June 21, 2019</h5>
-                <p>Lorem ipsum dolor sit amet, consectectur adipiscing.</p>
-                <small>By: Admin</small>
+                <h5>May 8, 2026</h5>
+                <p>Top 10 Indie Games You Need to Play Right Now</p>
+                <small>By: Sarah Chen</small>
               </div>
             </div>
 
@@ -347,9 +384,9 @@
             <div class="post-item">
               <img src="./assets/ui/latest_posts_3.jpg" />
               <div>
-                <h5>June 21, 2019</h5>
-                <p>Lorem ipsum dolor sit amet, consectectur adipiscing.</p>
-                <small>By: Admin</small>
+                <h5>May 5, 2026</h5>
+                <p>Next-Gen Graphics: What to Expect in 2026</p>
+                <small>By: Tech Reviewer</small>
               </div>
             </div>
           </div>
@@ -358,39 +395,39 @@
           <div class="posts-comments-box">
             <h3>Top Comments</h3>
 
-            <!-- post 1 -->
+            <!-- comment 1 -->
             <div class="comments-item">
               <img src="./assets/ui/top_comments_1.jpg" />
               <div>
                 <p>
-                  <span class="author">James Smith</span> <span>on</span> Lorem
-                  ipsum dolor sit amet consectectur.
+                  <span class="author">Alex Johnson</span> <span>on</span> Best
+                  gaming experience I've had in years!
                 </p>
-                <h5>June 21, 2019</h5>
+                <h5>May 11, 2026</h5>
               </div>
             </div>
 
-            <!-- post 2 -->
+            <!-- comment 2 -->
             <div class="comments-item">
               <img src="./assets/ui/top_comments_2.jpg" />
               <div>
                 <p>
-                  <span class="author">James Smith</span> <span>on</span> Lorem
-                  ipsum dolor sit amet consectectur.
+                  <span class="author">Maria Garcia</span> <span>on</span> The
+                  tournament was absolutely epic
                 </p>
-                <h5>June 21, 2019</h5>
+                <h5>May 9, 2026</h5>
               </div>
             </div>
 
-            <!-- post 3 -->
+            <!-- comment 3 -->
             <div class="comments-item">
               <img src="./assets/ui/top_comments_3.jpg" />
               <div>
                 <p>
-                  <span class="author">James Smith</span> <span>on</span> Lorem
-                  ipsum dolor sit amet consectectur.
+                  <span class="author">David Lee</span> <span>on</span> Can't
+                  wait for the next update release
                 </p>
-                <h5>June 21, 2019</h5>
+                <h5>May 7, 2026</h5>
               </div>
             </div>
 
@@ -398,10 +435,10 @@
               <img src="./assets/ui/top_comments_4.jpg" />
               <div>
                 <p>
-                  <span class="author">James Smith</span> <span>on</span> Lorem
-                  ipsum dolor sit amet consectectur.
+                  <span class="author">Emma Wilson</span> <span>on</span> This
+                  community is absolutely amazing
                 </p>
-                <h5>June 21, 2019</h5>
+                <h5>May 6, 2026</h5>
               </div>
             </div>
           </div>
@@ -414,10 +451,11 @@
     <footer id="contact">
       <div class="flex">
         <small
-          >Copyright &copy; 2023 All rights reserved | This template is made
-          with <span class="footer-heart">&#9829;</span> by
-          <a href="https://github.com/hofman10/" target="_blank">Bijeli&#263 Nikola</a
-          >.</small
+          >Copyright &copy; 2026 Game Warrior Hub. All rights reserved | Crafted
+          with <span class="footer-heart">♥</span> by
+          <a href="https://github.com/hofman10/" target="_blank"
+            >Bijelić Nikola</a
+          ></small
         >
         <ul>
           <li>
@@ -429,11 +467,11 @@
           </li>
 
           <li>
-            <a href="#tournaments">Blog</a>
+            <a href="#tournaments">Tournaments</a>
           </li>
 
           <li>
-            <a href="#recent-reviews">Forums</a>
+            <a href="#recent-reviews">Reviews</a>
           </li>
 
           <li>
